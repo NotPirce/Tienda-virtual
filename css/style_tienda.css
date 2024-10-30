@@ -1,0 +1,58 @@
+:root {
+  --morado: #a842b1;
+  --morado_oscuro: #7b1a8e;
+  --naranja: #ff5722;
+  --amarrillo: #93c73a;
+  --blanco: #ffffff;
+}
+
+body {
+  color: var(--blanco);
+  font-size: 1rem;
+  background-color: var(--morado);
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--morado_oscuro);
+  width: 100%;
+}
+
+a {
+  font-size: 1rem;
+  color: var(--amarrillo);
+  text-decoration: none;
+}
+
+.producto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item4 item5"
+    "item6 item7 item8"
+    "item9 item10 item11"
+    "item12 item13 item13"
+    "item14 item15 item16";
+  gap: 2rem;
+  width: 90%;
+  max-width: 100rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--morado_oscuro);
+}
