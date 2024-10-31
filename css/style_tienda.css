@@ -5,6 +5,7 @@
   --amarillo_oscuro: rgb(233, 187, 2);
   --blanco: #ffffff;
   --negro: #000000;
+  --celeste: #718ce5;
   --fuentePrincipal: "Nosifer", sans-serif;
 }
 
@@ -62,4 +63,90 @@ h3 {
 .navegacion__enlace--activo, /*esto es un comportamiento o una accion*/
 .navegacion__enlace:hover {
   color: var(--amarrillo);
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto {
+  background-color: var(--morado_oscuro);
+  padding: 1rem;
+}
+s .producto__nombre {
+  font-size: 4rem;
+}
+
+.producto__precio {
+  font-size: 2.8rem;
+  color: var(--amarrillo);
+}
+
+.producto__nombre,
+.producto__precio {
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grafico {
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / 3;
+}
+
+.grafico--camisa {
+  background-image: url(../img/grafico1.jpg);
+  grid-row: 2 / 3;
+}
+
+.grafico--node {
+  background-image: url(../img/grafico2.jpg);
+  grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+  .grafico--node {
+    grid-row: 5 / 6;
+  }
+}
+
+.footer {
+  background-color: var(--morado_oscuro);
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.footer__texto {
+  font-family: var(--fuentePrincipal);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    flex-direction: row;
+  }
 }
