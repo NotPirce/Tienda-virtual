@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style_tienda.css" />
+    <title>Producto</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img class="header__logo" src="./img/logo.png" alt="logo principal"
+      /></a>
+    </header>
+
+    <nav class="navegacion">
+      <a class="navegacion__enlace" href="index.html">Tienda</a>
+      <a
+        class="navegacion__enlace navegacion__enlace--activo"
+        href="nosotros.html"
+        >Nosotros</a
+      >
+    </nav>
+
+    <main class="contenedor">
+      <h1>TITULO CAMISA</h1>
+      <div class="contenidoCamisa">
+        <img class="imagen sombra" src="./img/3.jpg" alt="Imagen camisa" />
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit
+            quo odit, aut facere hic libero eos laborum nulla eius veniam
+            laudantium totam maiores ipsum magni adipisci sunt quae rerum!
+          </p>
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>--Seleccione la talla--</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+              required
+            />
+            <input
+              class="formulario__submit sombra"
+              type="submit"
+              value="Agregar al carrito "
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">Tienda -- Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
