@@ -169,7 +169,6 @@ s .producto__nombre {
 .bloque__titulo {
   font-size: 2rem;
 }
-<<<<<<< HEAD
 
 @media (min-width: 768px) {
   .contenidoCamisa {
@@ -222,5 +221,3 @@ s .producto__nombre {
 .imagen2 {
   border-radius: 1rem;
 }
-=======
->>>>>>> 125f20c4fa97587009c1b4a1d1c15ce993d7426e
