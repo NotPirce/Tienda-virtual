@@ -86,7 +86,7 @@ h3 {
   background-color: var(--morado_oscuro);
   padding: 1rem;
 }
-s .producto__nombre {
+.producto__nombre {
   font-size: 4rem;
 }
 
